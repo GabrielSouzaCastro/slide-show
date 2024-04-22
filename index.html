@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Slider Show</title>
+   <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+   <section class="slideShow-container">
+
+      <div class="slide fade">
+         <div class="numeroSlide">1/4</div>
+         <img src="assets/img/img1.jpg" class="imgSlide">
+         <div class="textoSlide">Emergência - slide 1</div>
+      </div>
+
+      <div class="slide fade">
+         <div class="numeroSlide">2/4</div>
+         <img src="assets/img/img2.jpg" class="imgSlide">
+         <div class="textoSlide">Pílulas - slide 2</div>
+      </div>
+
+      <div class="slide fade">
+         <div class="numeroSlide">3/4</div>
+         <img src="assets/img/img3.jpg" class="imgSlide">
+         <div class="textoSlide">Médico - slide 3</div>
+      </div>
+
+      <div class="slide fade">
+         <div class="numeroSlide">4/4</div>
+         <img src="assets/img/img4.jpg" class="imgSlide">
+         <div class="textoSlide">Microscópio - slide 4</div>
+      </div>
+
+      <a class="btnAnterior" onclick="mudarSlide(-1)">&lsaquo;</a>
+      <a class="btnProximo" onclick="mudarSlide(1)">&rsaquo;</a>
+
+   </section>
+
+   <section style="text-align: center;">
+      <span class="indicador" onclick="slideAtual(1)"></span>
+      <span class="indicador" onclick="slideAtual(2)"></span>
+      <span class="indicador" onclick="slideAtual(3)"></span>
+      <span class="indicador" onclick="slideAtual(4)"></span>
+   </section>
+
+
+   <script src="assets/js/script.js"></script>
+</body>
+
+</html>
